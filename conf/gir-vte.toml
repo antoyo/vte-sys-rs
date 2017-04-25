@@ -1,0 +1,13 @@
+[options]
+work_mode = "sys"
+library = "Vte"
+version = "2.91"
+external_libraries = [
+    "Gtk",
+    "GLib",
+    "GObject",
+    "Gio",
+    "Atk",
+    "Gdk",
+    "Pango",
+]

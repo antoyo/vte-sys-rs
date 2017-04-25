@@ -1,8 +1,11 @@
 [package]
+authors = ["Antoni Boucher <bouanto@zoho.com>"]
 build = "build.rs"
+license = "MIT"
 links = "vte"
 name = "vte-sys"
 version = "0.2.0"
+description = "FFI bindings for vte3"
 
 [build-dependencies]
 pkg-config = "0.3.7"

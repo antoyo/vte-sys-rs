@@ -1,11 +1,11 @@
 [package]
 authors = ["Antoni Boucher <bouanto@zoho.com>"]
 build = "build.rs"
+description = "FFI bindings for vte3"
 license = "MIT"
 links = "vte"
 name = "vte-sys"
 version = "0.2.0"
-description = "FFI bindings for vte3"
 
 [build-dependencies]
 pkg-config = "0.3.7"
@@ -23,6 +23,10 @@ pango-sys = "^0.3.3"
 
 [features]
 v0_40 = []
+v0_42 = ["v0_40"]
+v0_44 = ["v0_42"]
+v0_46 = ["v0_44"]
+v0_48 = ["v0_46"]
 
 [lib]
 name = "vte_sys"

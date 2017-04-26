@@ -16,7 +16,15 @@ fn main() {
 fn find() -> Result<(), Error> {
     let package_name = "vte-2.91";
     let shared_libs = ["vte-2.91"];
-    let version = {
+    let version = if cfg!(feature = "v0_48") {
+        "0.48"
+    } else if cfg!(feature = "v0_46") {
+        "0.46"
+    } else if cfg!(feature = "v0_44") {
+        "0.44"
+    } else if cfg!(feature = "v0_42") {
+        "0.42"
+    } else {
         "0.0"
     };
 

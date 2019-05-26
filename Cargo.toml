@@ -11,15 +11,15 @@ version = "0.2.1"
 pkg-config = "0.3.7"
 
 [dependencies]
-atk-sys = "^0.3.3"
-bitflags = "0.4"
-gdk-sys = "^0.3.3"
-gio-sys = "^0.3.3"
-glib-sys = "^0.3.3"
-gobject-sys = "^0.3.3"
-gtk-sys = "^0.3.3"
+atk-sys = "0.8"
+bitflags = "1"
+gdk-sys = "0.8"
+gio-sys = "0.8"
+glib-sys = "0.8"
+gobject-sys = "0.8"
+gtk-sys = "0.8"
 libc = "0.2"
-pango-sys = "^0.3.3"
+pango-sys = "0.8"
 
 [features]
 v0_40 = []
@@ -27,6 +27,15 @@ v0_42 = ["v0_40"]
 v0_44 = ["v0_42"]
 v0_46 = ["v0_44"]
 v0_48 = ["v0_46"]
+v0_50 = ["v0_48"]
+v0_52 = ["v0_50"]
+v0_54 = ["v0_52"]
+v0_56 = ["v0_54"]
+dox = []
 
 [lib]
 name = "vte_sys"
+
+[dev-dependencies]
+shell-words = "0.1.0"
+tempdir = "0.3"

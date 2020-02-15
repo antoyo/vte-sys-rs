@@ -5,7 +5,7 @@ description = "FFI bindings for vte3"
 license = "MIT"
 links = "vte"
 name = "vte-sys"
-version = "0.2.1"
+version = "0.2.2"
 [package.metadata.docs.rs]
 features = ["dox"]
 
@@ -17,25 +17,25 @@ bitflags = "1"
 libc = "0.2"
 
 [dependencies.atk-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.1"
 
 [dependencies.gdk-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.1"
 
 [dependencies.gio-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.1"
 
 [dependencies.glib-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.1"
 
 [dependencies.gobject-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.1"
 
 [dependencies.gtk-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.2"
 
 [dependencies.pango-sys]
-git = "https://github.com/gtk-rs/sys"
+version = "0.9.1"
 
 [features]
 v0_40 = []
@@ -48,10 +48,11 @@ v0_52 = ["v0_50"]
 v0_54 = ["v0_52"]
 v0_56 = ["v0_54"]
 dox = []
+v0_58 = ["v0_56"]
 
 [lib]
 name = "vte_sys"
 
 [dev-dependencies]
 shell-words = "0.1.0"
-tempdir = "0.3"
+tempfile = "3"
